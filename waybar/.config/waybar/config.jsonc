@@ -1,12 +1,12 @@
 {
   "layer": "top",
   "position": "top",
-  "height": 34,
+  "height": 30,
   "spacing": 4,
 
   "modules-left": ["hyprland/workspaces", "hyprland/window"],
   "modules-center": ["clock"],
-  "modules-right": ["pulseaudio", "network", "battery", "tray"],
+  "modules-right": ["backlight/slider", "pulseaudio", "network", "battery", "tray"],
 
   "hyprland/workspaces": {
     "disable-scroll": false,
@@ -23,6 +23,13 @@
   "clock": {
     "format": "{:%a %d %b  %H:%M}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+
+  "backlight/slider": {
+    "min": 0,
+    "max": 100,
+    "orientation": "horizontal",
+    "device": "intel_backlight"
   },
 
   "pulseaudio": {
